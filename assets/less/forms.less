@@ -1,0 +1,232 @@
+/*
+Remove Unwanted Styles
+---------------------------------------------------------------------------------------------------- */
+
+.custom_wrapper.gform_wrapper {
+	margin: unset;
+	position: relative;
+}
+
+
+.custom_wrapper.gform_wrapper .gform_body input,
+.custom_wrapper.gform_wrapper .gform_body ul li.gfield,
+.custom_wrapper.gform_wrapper .gform_body .ginput_container {
+	margin-top: unset;
+}
+
+
+.custom_wrapper.gform_wrapper .gform_body input,
+.custom_wrapper.gform_wrapper .gform_body textarea,
+.custom_wrapper.gform_wrapper .gform_body select {
+	margin-top: unset;
+	border-radius: 0;
+	border: none;
+	-webkit-border-radius: 0;
+	border: 0;
+}
+
+
+//Add Icon that's removed from removing a selects border radius
+.custom_wrapper.gform_wrapper .gform_body select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=');
+    padding: .5em;
+    padding-right: 1.5em
+}
+	
+
+
+.custom_wrapper.gform_wrapper .gform_body ul.gform_fields li.gfield {
+	padding-right: unset;
+	margin-bottom: 1rem;
+}
+
+
+.custom_wrapper.gform_wrapper .gform_footer {
+	margin: unset;
+	padding: unset;
+	
+	input.gform_button {
+		margin-right: unset;
+		border-radius: 0;
+		border: 1px solid transparent;
+		text-transform: uppercase;
+		background: none;
+		font-weight: bold;
+		cursor: pointer;	
+	}
+}
+
+
+
+.custom_wrapper.gform_wrapper li.gfield.gf_left_half,
+.custom_wrapper.gform_wrapper li.gfield.gf_right_half {
+	width: 48% !important;
+	
+	@media only screen and (max-width: 640px) {
+		width: 100% !important;
+	}
+}
+
+.custom_wrapper.gform_wrapper li.gfield.gf_left_half {
+	margin-right: 4% !important;
+	
+	@media only screen and (max-width: 640px) {
+		margin-right: 0 !important;	
+	}
+}
+
+
+.custom_wrapper.gform_wrapper ul.gfield_checkbox li {
+	margin-bottom: unset;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	
+	input {
+		margin-top: unset !important;
+		height: unset !important;	
+	}
+	
+	label {
+		margin-left: .5rem;
+	}
+}
+
+
+
+// Inline Position The Submit Button //
+.custom_wrapper.gform_wrapper .gform_footer {
+	width: auto;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+// form placeholder overrides - have to use !important or this doesn't work //
+::-webkit-input-placeholder {
+  // Chrome //
+  color: @text !important;
+}
+:-ms-input-placeholder {
+  // IE 10+ //
+  color: @text !important;
+}
+::-moz-placeholder {
+  // Firefox 19+ //
+  color: @text !important;
+  opacity: 1 !important;
+}
+:-moz-placeholder {
+	// Firefox 4 - 18 //
+	color: @text !important;
+	opacity: 1 !important;
+}
+
+
+.custom_wrapper.gform_wrapper input {
+	height: 44px;
+	padding-left: 15px;
+}
+
+.custom_wrapper.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	padding: 0 15px;
+}
+
+.custom_wrapper.gform_wrapper .gform_footer input.gform_button {
+	background-color: @secondary;
+	color: #fff;
+	height: 44px;
+	margin-bottom: 0;
+}
+
+.custom_wrapper.contact-form_wrapper input,
+.custom_wrapper.contact-form_wrapper textarea,
+.custom_wrapper.contact-form_wrapper select {
+	background-color: @gray;
+}
+
+.custom_wrapper.contact-form_wrapper input,
+.custom_wrapper.contact-form_wrapper select {
+	height: 58px !important;
+}
+
+
+/*
+
+.custom_wrapper.gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+	font-family: @font_regular;
+	padding-left: .75rem;
+}
+*/
+
+
+
+
+
+/*
+Error Messages
+---------------------------------------------------------------------------------------------------- */
+
+.gform_wrapper div.validation_error {
+	font-size: 14px !important;
+	text-align: center;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	margin-bottom: 0 !important;
+	color: #fff !important;
+	padding: 0 !important;
+}
+
+.gform_wrapper .validation_message {
+	color: #fff !important;
+	text-align: center !important;
+	padding-top: 0 !important;
+}
+
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+.custom_wrapper.contact-form_wrapper li.gfield.gfield_error,
+.custom_wrapper.contact-form_wrapper .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+}
+
+
+
+.custom_wrapper.contact-form_wrapper .gform_wrapper div.validation_error {
+	font-size: 12px;
+}
+
+.custom_wrapper.contact-form_wrapper .validation_error,
+.custom_wrapper.contact-form_wrapper .validation_message {
+	color: @secondary !important;
+}
+
+.custom_wrapper.contact-form_wrapper li.gfield.gfield_error,
+.custom_wrapper.contact-form_wrapper .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	border-top: 1px solid @secondary !important;
+	border-bottom: 1px solid @secondary !important;
+}
+
+.custom_wrapper.contact-form_wrapper .gform_footer {
+	position: relative;
+	float: right;
+}
+
+.custom_wrapper.contact-form_wrapper .gform_footer input {
+	height: auto !important;
+	line-height: 1.4;
+}

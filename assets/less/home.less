@@ -1,0 +1,174 @@
+
+.post,
+.page {
+	margin-bottom: 0;
+}
+
+.home-block {
+	margin: 5rem 0;
+	
+	@media only screen and (max-width: 576px) {
+		margin: 2.5rem 0;
+	}
+}
+
+.home-block:last-child {
+	margin-bottom: 0;
+}
+
+
+
+/*
+Featured Pages
+---------------------------------------------------------------------------------------------------- */
+
+#featured-pages .block {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	.inner.wrap {
+		padding: 2rem;
+	}
+}
+
+
+#featured-pages .feature.block {
+	min-height: 350px;
+	
+	@media only screen and (max-width: 576px) {
+		min-height: 275px;
+	}
+}
+
+#featured-pages .feature.block .section-header h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.block-header .title {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-size: 47px;
+	font-size: 2.7rem;
+	margin-bottom: 0;
+	max-width: 85%;
+	
+}
+
+
+
+/*
+News Cards
+---------------------------------------------------------------------------------------------------- */
+
+.news .blog-img {
+	max-width: 225px;
+	min-height: 225px;
+	border-radius: 15rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto 30px;
+	
+	@media only screen and (max-width: 991px) {
+		max-width: 200px;
+		min-height: 200px;
+	}
+	
+	@media only screen and (max-width: 767px) {
+		max-width: 175px;
+		min-height: 175px;
+	}
+	
+	@media only screen and (max-width: 450px) {
+		max-width: 150px;
+		min-height: 150px;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+.news.block {
+	margin: 2rem 0;
+}
+
+
+.news .inner {
+	h3 a {
+		color: @primary;
+		
+		&:hover {
+			color: @secondary;
+		}
+	}
+
+	
+	@media only screen and (max-width: 991px) {
+		h3 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: .9rem;
+		}
+	}
+
+}
+
+
+// Date and Share Buttons //
+.post-meta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .25rem 0;
+}
+
+
+.news.block .inner .post-meta p.date {
+	font-size: .9rem;
+	color: @primary;
+}
+
+p.date {
+	font-family: @font_header;
+}
+
+.share-wrapper {
+	margin-left: 1rem;
+}
+
+.share-wrapper .st-btn {
+	border: none !important;
+}
+
+.share-wrapper #st-2 .st-btn {
+	margin-right: unset;
+	padding: 0 .25rem;
+}
+
+.share-wrapper #st-2 .st-btn > svg {
+	height: 25px;
+	width: 25px;
+	top: 4px;
+}
+
+
+
+#news {
+	.section-header {
+		margin-bottom: 2rem;
+	}
+	
+	.btn.btn-lg {
+		@media only screen and (max-width: 767px) {
+			font-size: 1.25rem;
+			padding: .5rem 2rem;
+		}
+	}
+}

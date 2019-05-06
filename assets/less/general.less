@@ -1,0 +1,292 @@
+/*
+Blockquote
+Overlays
+Borders
+Pagination
+---------------------------------------------------------------------------------------------------- */
+
+.content-area {
+	margin-top: 3rem;
+	
+	@media only screen and (max-width: 767px) {
+		margin-top: 2rem;
+	}
+	
+	@media only screen and (max-width: 576px) {
+		margin-top: 1rem;
+	}
+	
+	.entry-content {
+		margin-top: unset;
+	}
+	
+	.site-main {
+		h2 {
+			font-size: 2.25rem;
+		}
+	}
+}
+
+
+
+hr {
+	border-top: 2px solid @secondary;
+}
+
+
+ul {
+	margin-left: 0;
+}
+
+
+.type-page .entry-content h3 {
+	text-transform: none;
+	margin-bottom: 1rem;
+}
+
+
+
+/*
+Blockquotes
+---------------------------------------------------------------------------------------------------- */
+
+
+
+blockquote {
+	border-left: 5px solid @secondary;
+	margin: unset;
+    padding: .5rem 0 .5rem 1.5rem;
+    margin: 2rem 0;
+    
+    p {
+	    margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/*
+Overlays
+---------------------------------------------------------------------------------------------------- */
+
+
+.overlay, .overlay-custom-1, .overlay-custom-2 {
+	position: relative;
+}
+
+.overlay .inner.wrap {
+	color: #fff;
+}
+.overlay .inner.wrap h1,
+.overlay .inner.wrap h2,
+.overlay .inner.wrap h3,
+.overlay .inner.wrap h4,
+.overlay .inner.wrap h5,
+.overlay .inner.wrap h6,
+.overlay .inner.wrap p {
+	color: #fff;
+}
+
+.overlay:after, .overlay-custom-1:after, .overlay-custom-2:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+
+.wrap {
+	position: relative;
+	z-index: 1;
+}
+
+.overlay > .wrap {
+	color: #fff;
+}
+
+
+
+// Section Headers 
+
+.section-header h2 {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 1rem;
+	max-width: 90%;
+	
+	@media only screen and (max-width: 576px) {
+		max-width: 85%;	
+	}
+}
+
+
+
+/*
+Borders
+---------------------------------------------------------------------------------------------------- */
+
+// Primary Border /////////////////////////////
+.border-title:before,
+.border-title:after {
+	position: absolute;
+	content: " ";
+	text-shadow: none;
+	background-color: @primary;
+}
+
+
+
+// White Border /////////////////////////////
+.border-title.white:before,
+.border-title.white:after {
+	background-color: #fff;
+}
+
+
+
+// Secondary Border /////////////////////////////
+.border-title.secondary:before,
+.border-title.secondary:after {
+	background-color: @secondary;
+}
+
+
+
+// Top Left /////////////////////////////
+.top-left:before, .top-left:after {
+	top: -15px;;
+	left: -25px;
+}
+
+.top-left:before {
+	height: 22px;
+	width: 4px;
+}
+
+.top-left:after {
+	height: 4px;
+	width: 22px;
+}
+
+// end /top-left /////////////////////////////
+
+
+
+
+// Bot Left /////////////////////////////
+.bot-left:before, .bot-left:after {
+	bottom: -15px;;
+	left: -25px;
+}
+.bot-left:before {
+  height: 22px;
+  width: 4px;
+ 
+}
+
+.bot-left:after {
+  width: 22px;
+  height: 4px;
+}
+
+//end /bot-left /////////////////////////////
+
+
+
+
+// Top Right /////////////////////////////
+.top-right:before, .top-right:after {
+	top: -15px;;
+	right: -25px;
+}
+
+.top-right:before {
+	height: 22px;
+	width: 4px;
+}
+
+.top-right:after {
+	height: 4px;
+	width: 22px;
+}
+
+//end /top-right /////////////////////////////
+
+
+
+
+// Bottom Right /////////////////////////////
+.bot-right:before,
+.bot-right:after {
+	bottom: -15px;;
+	right: -25px;
+}
+
+.bot-right:before {
+	height: 22px;
+	width: 4px;
+}
+
+
+.bot-right:after {
+	height: 4px;
+	width: 22px;
+}
+
+//end /bot-right /////////////////////////////
+
+
+
+/*
+Pagination
+---------------------------------------------------------------------------------------------------- */
+
+// The containing box with a nice white background //
+.paging-navigation {
+	font-family: sans-serif;
+	padding: 1em;
+	background: #fff;
+	background: #ffffff;
+	width: 100%;
+	text-align: center;
+}
+
+
+// Remove bullets and list indentation //
+.paging-navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+// Make the list items appear horizontally //
+.paging-navigation li {
+	display: inline;
+}
+
+
+// Give each link and the current item some padding to make them easy to click //
+a.page-numbers,
+span.page-numbers {
+	padding: .3em .7em;
+	color: @text;
+}
+
+
+// Link hover state //
+a:hover.page-numbers {
+	color: @primary;
+}
+
+
+// Current page bold and dark //
+.paging-navigation .current {
+	font-weight: bold;
+	color: @secondary;
+}

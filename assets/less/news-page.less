@@ -1,0 +1,36 @@
+.news.blog-page {
+	margin: 1rem 0 4rem;
+	
+	@media only screen and (max-width: 767px) {
+		text-align: center;
+	}
+	
+	.blog-img {
+		max-width: 200px;
+		min-height: 200px;
+	}
+	
+	.post-meta {
+		justify-content: unset;
+	
+		@media only screen and (max-width: 767px) {
+			justify-content: center;
+		}
+	}
+	
+	h3 {
+		-webkit-transition: all .15s ease-in;
+		-moz-transition: all .15s ease-in;
+		-o-transition: all .15s ease-in;
+		transition: all .15s ease-in;
+	}
+	
+	h3:hover {
+		color: @secondary;
+	}
+}
+
+
+.news.blog-page .inner .btn-read {
+	margin: unset;
+}

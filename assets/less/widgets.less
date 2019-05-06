@@ -1,0 +1,228 @@
+.widget {
+	margin: 0 0 3rem;
+	text-align: center;
+}
+
+.widget-area .widget-pad {
+	padding: 2rem;
+}
+
+
+.widget-area .widget_text.widget.news-widget {
+	padding: .25rem;
+	text-align: left;
+}
+
+
+.widget-area .widget_text.widget.news-widget ul {
+	list-style-type: none;
+	padding-left: unset;
+	margin: 1rem 0;
+}
+
+
+.widget-area .widget_text.widget.news-widget ul li {
+	margin-bottom: 1rem;
+}
+
+.widget-area .widget h3 {
+	position: relative;
+	color: @primary;
+	text-align: left;
+	font-size: 1.7rem;
+}
+
+
+.widget-area .widget_text.widget.news-widget .share-wrapper {
+	margin-left: unset;
+	display: flex;
+}
+
+
+
+.widget-area .connect-widget .section-header {
+	text-align: left;
+}
+
+
+.widget-area .connect-widget {	
+	.social-wrapper {
+		justify-content: unset;
+		margin: .75rem;
+		
+		a.social-icon {
+			color: @secondary;
+			font-size: 1.4rem;
+			
+			&:hover {
+				color: @primary;
+			}
+		}	
+	}
+	
+	.social-wrapper .list-inline-item:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+}
+
+
+.widget-area .widget_text.widget.news-widget .stay-connected .wrap a.social-icon {
+	margin-right: .5rem;
+}
+
+
+
+// Donate Widget //
+
+.donate-widget {
+	p {
+		font-size: 15px;
+		font-family: @font_header;
+		color: @text;
+	}
+	
+	label {
+		padding: .5rem;
+		cursor: pointer !important;
+		margin-bottom: 0;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+	}
+	
+	.col-sm-3 {
+		label {
+			padding: .5rem;
+			font-size: .8rem;
+		}
+	}
+}
+
+
+.widget-area .donate-btn-wrap .align-items-center {
+	justify-content: space-between;
+}
+
+
+.widget-area .donate-btn-wrap [type=radio]:checked + label {
+	background-color: @primary !important;
+	color: #fff !important;
+}
+
+
+.widget-area .donate-btn-wrap label {
+	font-family: @font_header;
+	font-size: 1rem;
+	color: @text;
+	background-color: #fff;
+	width: 100%;
+	
+	&:hover {
+		background-color: @primary;
+		color: #fff;
+	}
+}
+
+
+.widget-area .donate-btn-wrap input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+
+.widget-area .donate-btn-wrap .donate-submit {
+	width: 100%;
+}
+
+
+.widget-area .donate-btn-wrap input[type="submit"] {
+	font-family: @font_header;
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: @secondary;
+	color: #fff;
+	border: none;
+	padding: 14px 20px;
+	margin-top: .5rem;
+	border-radius: 0 !important;
+	width: 100%;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+
+.widget-area .donate-btn-wrap .donate-submit:hover input[type="submit"] {
+	background-color: darken(@secondary, 20%);
+}
+
+
+.widget-area .donate-btn-wrap .donate-amount {
+	width: 100%;
+	margin-bottom: .5rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.widget-area .donate-btn-wrap .donate-amount label {
+		width: 100%;
+		
+		&:hover {
+			background-color: darken(#fff, 20%);
+		}
+	}
+}
+
+
+
+
+// Newsletter Widget Styles 
+.widget.gform_widget {
+	color: #fff;
+	padding: 2rem;
+	text-align: center;
+	
+	.gform_description {
+		text-align: center;
+	}
+	
+	.gform_button {
+		font-size: 15px;
+	}
+}
+
+
+.donate-widget {
+	background-color: @gray;
+	color: @primary;
+}
+
+.donate-widget p {
+	font-size: 17px;
+	font-family: @font_header;
+}
+
+
+.secondary-bg {
+	.custom_wrapper.gform_wrapper .gform_footer input.gform_button {
+		background-color: @primary;
+		
+		&:hover {
+			color: @secondary;
+		}
+	}
+}
+
+
+.primary-bg {
+	.custom_wrapper.gform_wrapper .gform_footer input.gform_button {
+		background-color: @secondary;
+		
+		&:hover {
+			color: @primary;
+		}
+	}
+}

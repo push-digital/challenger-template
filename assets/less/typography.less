@@ -1,0 +1,112 @@
+.global-fontsize (@global-fontsize: 1) {
+	font-size: (@global-fontsize * 18) * 1px;
+	font-size: @global-fontsize * 1rem;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: @font_regular;
+	font-weight: 400;
+	.global-fontsize(1);
+	line-height: 1.4;
+	color: @text;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "kern", "liga", "pnum";
+	font-feature-settings: "kern", "liga", "pnum";
+	text-rendering: optimizeLegibility;
+
+	@media only screen and (max-width : 767px) {
+		.global-fontsize(.9);
+	}
+	@media only screen and (max-width : 576px) {
+		.global-fontsize(.85);
+	}
+}
+
+
+html {
+	font-size: 17px;
+	font-family: @font_regular;
+}
+
+
+
+
+/*
+Headers
+---------------------------------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font_header;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: @primary;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+h1 {
+	font-size: 3.75rem;	
+}
+
+
+h2 {
+	font-size: 3rem;
+	
+	@media only screen and (max-width: 576px) {
+		font-size: 2.25rem; 
+	}
+	
+	@media only screen and (max-width: 576px) {
+		font-size: 2rem;
+	}
+}
+
+/*
+
+h3 {
+	font-size: 2rem;
+  
+	@media only screen and (max-width: 576px) {
+		font-size: 1.9rem;
+	}
+}
+
+h4 {
+	font-size: 1.7rem;
+}
+
+h5 {
+	font-size: 1.4rem;
+}
+*/
+
+
+
+
+/*
+Links
+---------------------------------------------------------------------------------------------------- */
+
+a,
+a:visited {
+	color: @secondary;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+a:hover {
+	color: darken(@secondary, 20%);	
+	text-decoration: none;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 1rem;
+}

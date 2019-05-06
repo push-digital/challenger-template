@@ -1,0 +1,175 @@
+/* Hero */
+/* Page Banners */
+
+
+/*
+Hero
+---------------------------------------------------------------------------------------------------- */
+
+#home-hero {
+	max-height: 100vh;	
+	background-size: cover;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	background-repeat: no-repeat;
+	
+	@media only screen and (max-width: 1200px) {
+		max-height: 650px;
+	}
+	
+	@media only screen and (max-width: 767px) {
+		flex-direction: column;
+		height: auto;
+	}
+	
+	p {
+		font-size: 21px;
+		margin-bottom: .5rem;
+	}
+}
+
+#home-hero .left-half,
+#home-hero .right-half {
+	width: 50%;
+	
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+#home-hero .left-half {
+	padding: 2rem 3rem;
+	position: relative;
+	@media only screen and (max-width: 767px) {
+		
+	}
+}
+
+
+#home-hero .hero-title {
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	
+	h1 {
+		font-size: 4rem;
+		font-weight: 500;
+		text-transform: none;
+		width: 50%;
+		
+		@media only screen and (max-width: 767px) {
+			font-size: 4rem;
+			width: 100%;
+		}
+	
+		@media only screen and (max-width: 576px) {
+			font-size: 3rem;
+		}
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		text-transform: none;
+		font-weight: 400;
+	}
+}
+
+
+#home-hero .hero-title .top-left:before,
+#home-hero .hero-title .top-left:after {
+	top: -12px;
+	left: -24px;
+}
+
+// Left Border
+#home-hero .hero-title .top-left:before {
+	height: 280px;
+	
+	@media only screen and (max-width: 767px) {
+		height: 240px;
+	}
+}
+
+// Right Border
+#home-hero .hero-title .top-left:after {
+	width: 100px;
+	
+	@media only screen and (max-width: 767px) {
+		width: 80px;
+	}
+}
+
+
+.hero-overlay:after {
+	content: '';
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+
+/*
+Inner Page Banners
+---------------------------------------------------------------------------------------------------- */
+
+
+
+.page-banner {
+	.d-flex.align-items-center.overlay {
+		height: 300px;
+		
+		@media only screen and (max-width: 767px) {
+			height: 250px;
+		}
+		
+		@media only screen and (max-width: 576px) {
+			height: 220px;
+		}
+	}
+}
+
+.page-banner .page-header {
+	margin: 0 2rem;
+}
+
+.page-banner .page-header h1 {
+	
+	@media only screen and (max-width: 767px) {
+		font-size: 3.75rem;
+	}
+	
+	@media only screen and (max-width: 576px) {
+		font-size: 3.25rem;
+	}
+	
+	@media only screen and (max-width: 425px) {
+		font-size: 2.5rem;
+	}
+}
+
+.page-banner .top-left.white:before {
+	height: 50px;
+	left: -25px;
+    top: -10px;
+}
+
+.page-banner .top-left.white:after {
+	width: 40px;
+	top: -10px;
+    left: -25px;
+}
+
+.page-banner {
+	.default-banner {
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+}

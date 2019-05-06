@@ -1,0 +1,144 @@
+#donations .donate-btn-wrap {
+	margin: 3rem 0;
+	justify-content: center;
+	
+	.donate-btn-inner {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+#donations .donate-btn-wrap label:before,
+#donations .donate-btn-wrap label:after {
+	display: none !important;
+}
+
+//Gray Donate Buttons on homepage
+#donations .donate-btn-wrap label {
+	background-color: @gray;
+	width: 100%;
+	min-height: 50px;
+	height: 60px !important;
+	text-align: center;
+	left: 0px !important;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	padding-top: 11px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+
+
+//Donation Button Homepage Section
+#donations .donate-btn-wrap input[type="submit"] {
+	font-size: 1.25rem;
+	font-family: @font_header;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 60px;
+	width: 100%;
+	background-color: @secondary;
+	color: #fff;
+	border: none;
+	border-radius: 0 !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 1.2rem 2.75rem;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	
+	&:hover {
+		background-color: @primary;
+	}
+}
+
+
+//Donation Amount Buttons
+#donations .donate-btn-wrap label {
+	font-size: 1.25rem;
+	background-color: @gray;
+	color: @text;
+	font-family: @font_header;
+	width: 140px;
+	margin-right: .5rem;
+	padding: 0;
+	line-height: 60px;
+	margin-bottom: 0;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	
+	&:hover {
+		background-color: #B7B7B7;
+	}
+}
+
+
+//Donation Buttons Selected Color
+#donations .donate-btn-wrap [type=radio]:checked + label {
+	background-color: @primary !important;
+	color: #fff !important;
+}
+
+
+//Hide the radio
+#donations .donate-btn-wrap input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+
+#donations .donate-btn-wrap .donate-amount,
+#donations .donate-btn-wrap .donate-submit {
+	margin: .25rem 0;
+}
+
+
+//Text under header
+
+#donations .text-wrapper {
+	width: 50%;
+	margin: auto;
+	
+	@media only screen and (max-width: 991px) {
+		width: 75%;	
+	}
+	
+	@media only screen and (max-width: 767px) {
+		width: unset;
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	
+	#donations .donate-btn-wrap .donate-btn-inner {
+		justify-content: space-between;
+	}
+	
+	.donate-submit {
+	    	width: 100%;
+	}
+	
+	.donate-amount {
+	    width: 32%;
+	}
+	
+	#donations .donate-btn-wrap label {
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+	.donate-amount {
+		width: 100%;
+	}
+}
